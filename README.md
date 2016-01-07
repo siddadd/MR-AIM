@@ -1,7 +1,7 @@
-icassp2013
+MR-AIM
 ==========
 
-Source code based on work published in ICASSP 2013. Paper available at http://ieeexplore.ieee.org/xpls/icp.jsp?arnumber=6638125
+Source code for MR-AIM based on work published in ICASSP 2013. Paper available at http://ieeexplore.ieee.org/xpls/icp.jsp?arnumber=6638125
 
 If you use this code for evaluation and/or benchmarking, we appreciate if you cite an appropriate subset of the following papers:
 
@@ -41,15 +41,11 @@ Getting Started
 - Compile code using make (tested on MacOS X Yosemite) 
 > make
 
-- Run MR-AIM 
-> ./cvMR-AIM image.jpg
-
-- Final Saliency map is generated as MR-AIMInfomap_image.jpg
-
-- Run AIM 
-> ./cvMR-AIM image.jpg 0
-
-- Final Saliency map is generated as AIMInfomap_image.jpg
+- Run MIT Benchmark
+-- Download the dataset from http://saliency.mit.edu/results_mit300.html
+-- >./cvMR-AIM BenchmarkIMAGES/ BenchmarkOUTPUT/
+-- Saliency maps are generated in the directory BenchmarkOUTPUT
+-- To run baseline AIM model >./cvMR-AIM BenchmarkIMAGES/ BenchmarkOUTPUT/ 0
 
 ----------------
 Dependencies
