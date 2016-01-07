@@ -27,7 +27,7 @@ Contents
 
 This code package contains the following files:
 
-- RunMR-AIM.cpp is the code that runs MR-AIM (model proposed in ICASSP 2013)
+- RunMITBenchmark.cpp is the code that runs MR-AIM (model proposed in ICASSP 2013) on the MIT Benchmark
 
 - We also provide an open-source C++ version of the original AIM model (proposed in JOV 2009) for comparison purposes. Original MATLAB code is available at http://www-sop.inria.fr/members/Neil.Bruce/AIM.zip
 
@@ -42,10 +42,10 @@ Getting Started
 > make
 
 - Run MIT Benchmark
--- Download the dataset from http://saliency.mit.edu/results_mit300.html
--- >./cvMR-AIM BenchmarkIMAGES/ BenchmarkOUTPUT/
--- Saliency maps are generated in the directory BenchmarkOUTPUT
--- To run baseline AIM model >./cvMR-AIM BenchmarkIMAGES/ BenchmarkOUTPUT/ 0
+1. Download the dataset from http://saliency.mit.edu/results_mit300.html
+2. >./cvMR-AIM BenchmarkIMAGES/ BenchmarkOUTPUT/
+3. Saliency maps are generated in the directory BenchmarkOUTPUT
+4. To run baseline AIM model >./cvMR-AIM BenchmarkIMAGES/ BenchmarkOUTPUT/ 0
 
 ----------------
 Dependencies
