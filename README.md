@@ -36,16 +36,17 @@ Getting Started
 ----------------
 
 - Navigate to Debug folder
-> cd ./code/Debug
+> cd ./source/Debug
 
 - Compile code using make (tested on MacOS X Yosemite) 
 > make
 
-- Run MIT Benchmark
-1. Download the dataset from http://saliency.mit.edu/results_mit300.html
-2. >./cvMR-AIM BenchmarkIMAGES/ BenchmarkOUTPUT/
-3. Saliency maps are generated in the directory BenchmarkOUTPUT
-4. To run baseline AIM model >./cvMR-AIM BenchmarkIMAGES/ BenchmarkOUTPUT/ 0
+- Download the dataset from http://saliency.mit.edu/results_mit300.html
+- >./cvMR-AIM BenchmarkIMAGES/ BenchmarkOUTPUT/
+
+Saliency maps are generated in the directory BenchmarkOUTPUT
+
+- To run baseline AIM model >./cvMR-AIM BenchmarkIMAGES/ BenchmarkOUTPUT/ 0
 
 ----------------
 Dependencies
