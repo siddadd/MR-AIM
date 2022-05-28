@@ -23,7 +23,7 @@ using namespace cv;
 using namespace std;
 
 // Helper Function
-static string toLowerCase(const string& in)
+static string my_toLowerCase(const string& in)
 {
 	string t;
 	for (string::const_iterator i = in.begin(); i != in.end(); i++)
@@ -114,7 +114,7 @@ int main (int argc, char* argv[])
 			extensionLocation = string(ep->d_name).find_last_of("."); // Assume the last point marks beginning of file extension
 
 			// Check if extension matches the wanted one
-			string tempExt = toLowerCase(string(ep->d_name).substr(extensionLocation + 1));
+			string tempExt = my_toLowerCase(string(ep->d_name).substr(extensionLocation + 1));
 			if (find(validExtensions.begin(), validExtensions.end(), tempExt) != validExtensions.end())
 			{
 				cout << "[INFO]: Found matching data file " << ep->d_name << endl;
